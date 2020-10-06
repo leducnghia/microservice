@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="hr-service" />
+        <module name="discovery-server" />
+        <module name="pathology-service" />
+        <module name="admissions-service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="admissions-service" target="1.8" />
+      <module name="discovery-server" target="1.8" />
+      <module name="hr-service" target="1.8" />
+      <module name="pathology-service" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="admissions-service" options="-parameters" />
+      <module name="discovery-server" options="-parameters" />
+      <module name="hr-service" options="-parameters" />
+      <module name="pathology-service" options="-parameters" />
+    </option>
+  </component>
+</project>
